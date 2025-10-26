@@ -1,66 +1,30 @@
+import * as LucideIcons from "lucide-react"; // Import everything as an object
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { TrendingUp, Zap, Shield, Network } from "lucide-react";
+import portfolioData from "../data/portfolio-data.json";
 
 interface Project {
   id: number;
   title: string;
   description: string;
   impact: string;
-  icon: React.ReactNode;
+  icon: string;
   technologies: string[];
   category: string;
+  url: string;
 }
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "RAG-Based AI Advisor",
-    description: "Co-developed an AI Advisor enabling document-grounded policy insights through a RAG architecture. Optimized embedding pipelines and chatbot logic for context-aware, accurate responses using vector databases.",
-    impact: "Delivered context-aware policy recommendations with improved accuracy through optimized RAG implementation",
-    icon: <Zap className="w-6 h-6" />,
-    technologies: ["OpenAI", "FastAPI", "PostgreSQL", "RAG", "LangChain", "Vector Embeddings"],
-    category: "AI/ML"
-  },
-  {
-    id: 2,
-    title: "Geospatial Data Pipeline",
-    description: "Engineered end-to-end geospatial data pipelines to extract and process SHP and TIFF files for mapping and spatial metrics. Refactored and automated large-scale TIFF processing scripts for cloud integration and database synchronization.",
-    impact: "Automated geospatial processing workflows, reducing manual intervention and improving data pipeline reliability",
-    icon: <Network className="w-6 h-6" />,
-    technologies: ["Python", "SHP/TIFF Processing", "Cloud Integration", "PostgreSQL", "Pytest", "Automation"],
-    category: "Data Engineering"
-  },
-  {
-    id: 3,
-    title: "The Fineprint Project",
-    description: "Delivered measurable impact by automating legal text interpretation using Groq LLMs, Ollama, and Gemini TTS. Built intelligent document analysis system that extracts and summarizes complex legal language.",
-    impact: "Automated legal document processing, making complex terms accessible through AI-powered interpretation",
-    icon: <Shield className="w-6 h-6" />,
-    technologies: ["Groq LLMs", "Ollama", "Gemini TTS", "NLP", "LangChain", "Document Processing"],
-    category: "AI/ML"
-  },
-  {
-    id: 4,
-    title: "Financial Forecasting & MLOps Pipeline",
-    description: "Developed and managed ETL and MLOps pipelines with Airflow and MLflow for financial forecasting and model lifecycle tracking. Applied transfer learning, resampling, and explainability techniques across diverse datasets.",
-    impact: "Streamlined model deployment cycle and improved forecasting accuracy through systematic MLOps practices",
-    icon: <TrendingUp className="w-6 h-6" />,
-    technologies: ["Airflow", "MLflow", "Scikit-learn", "SHAP", "Transfer Learning", "Model Versioning"],
-    category: "MLOps"
-  },
-  {
-    id: 5,
-    title: "Multi-Domain ML Systems",
-    description: "Built and optimized machine learning systems spanning fraud detection, healthcare, finance, and NLP applications. Designed AI workflows integrating FastAPI, LangChain, and Pinecone for real-world automation and analysis tasks.",
-    impact: "Delivered production-ready ML solutions across multiple industries with measurable business impact",
-    icon: <Zap className="w-6 h-6" />,
-    technologies: ["FastAPI", "LangChain", "Pinecone", "Scikit-learn", "XGBoost", "Model Explainability"],
-    category: "AI/ML"
-  }
-];
-
 export function PortfolioSection() {
+  const projects = portfolioData.projects.map((project) => {
+    // Dynamically get the icon component from LucideIcons
+    const IconComponent = (LucideIcons as any)[project.icon] || LucideIcons.Zap;
+
+    return {
+      ...project,
+      icon: <IconComponent className="w-6 h-6" />,
+    };
+  });
+
   return (
     <section id="portfolio" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
@@ -102,7 +66,7 @@ export function PortfolioSection() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, index) => (
                   <Badge 
                     key={index} 
@@ -112,6 +76,17 @@ export function PortfolioSection() {
                     {tech}
                   </Badge>
                 ))}
+              </div>
+
+              <div className="mt-4">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 rounded bg-primary text-white hover:bg-primary/80 transition-colors text-sm"
+                >
+                  View Project
+                </a>
               </div>
             </Card>
           ))}

@@ -17,13 +17,13 @@ export function HeroSection() {
           <span className="text-sm text-primary">Data Scientist & AI/ML Engineer</span>
         </div>
         
-        <h1 className="mb-6 text-primary">
+        <h1 className="mb-6 text-5xl md:text-7xl lg:text-8xl font-bold text-primary">
           Ridwan Lanre Yusuf
           <br />
-          <span className="text-muted-foreground text-3xl md:text-4xl">Scaling AI Solutions from Prototype to Production</span>
+          <span className="text-muted-foreground text-xl md:text-2xl lg:text-3xl font-normal">Scaling AI Solutions from Prototype to Production</span>
         </h1>
         
-        <p className="max-w-2xl mx-auto mb-10 text-muted-foreground">
+        <p className="text-base md:text-lg max-w-2xl mx-auto mb-10 text-muted-foreground">
           Experienced in end-to-end model development, deployment, and monitoring. Designing robust ML systems 
           with FastAPI, Docker, MLflow, and CI/CD pipelines across finance, healthcare, fraud detection, and NLP domains.
         </p>
@@ -46,15 +46,19 @@ export function HeroSection() {
           </Button>
         </div>
         
-        {/* Floating tech indicators */}
+        {/* Core technologies */}
         <div className="mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span>Python</span>
+          </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
             <span>FastAPI</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>LangChain</span>
+            <span>Docker</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
@@ -62,7 +66,19 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>RAG Systems</span>
+            <span>LangChain</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span>AWS</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span>PostgreSQL</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span>CI/CD</span>
           </div>
         </div>
       </div>

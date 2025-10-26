@@ -72,12 +72,12 @@ export function ContactSection() {
                   Connect with me professionally
                 </p>
                 <a 
-                  href="https://linkedin.com/in/ridwan-lanre-yusuf" 
+                  href="https://www.linkedin.com/in/yusufridwan/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline flex items-center gap-1"
                 >
-                  linkedin.com/in/ridwan...
+                  linkedin.com/in/yusufr...
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
@@ -87,7 +87,7 @@ export function ContactSection() {
 
         <TerminalBlock title="connect.sh" variant="darker">
           <CodeLine># Clone and explore my projects</CodeLine>
-          <CodeLine>git clone https://github.com/ridwanxyzcloud</CodeLine>
+          <CodeLine>git clone https://github.com/GentRoyal/repo-name</CodeLine>
           <CodeLine output>Cloning into 'projects'...</CodeLine>
           <CodeLine></CodeLine>
           <CodeLine># Or reach out directly</CodeLine>
@@ -103,7 +103,7 @@ export function ContactSection() {
               className="border-primary/30 hover:border-primary hover:bg-primary/10"
               asChild
             >
-              <a href="https://github.com/ridwanxyzcloud" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GentRoyal" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5" />
               </a>
             </Button>
@@ -113,7 +113,7 @@ export function ContactSection() {
               className="border-primary/30 hover:border-primary hover:bg-primary/10"
               asChild
             >
-              <a href="https://linkedin.com/in/ridwan-lanre-yusuf" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/yusufridwan/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
               </a>
             </Button>

@@ -1,0 +1,154 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "RAG-Based AI Advisor",
+      "description": "Co-developed an AI Advisor enabling document-grounded policy insights through a RAG architecture. Optimized embedding pipelines and chatbot logic for context-aware, accurate responses using vector databases.",
+      "impact": "Delivered context-aware policy recommendations with improved accuracy through optimized RAG implementation",
+      "icon": "Zap",
+      "technologies": ["OpenAI", "FastAPI", "PostgreSQL", "RAG", "Vector Embeddings"],
+      "category": "AI/ML",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "title": "Geospatial Data Pipeline",
+      "description": "Engineered end-to-end geospatial data pipelines to extract and process SHP and TIFF files for mapping and spatial metrics. Refactored and automated large-scale TIFF processing scripts for cloud integration and database synchronization.",
+      "impact": "Automated geospatial processing workflows, reducing manual intervention and improving data pipeline reliability",
+      "icon": "Network",
+      "technologies": ["Python", "SHP/TIFF Processing", "Cloud Integration", "PostgreSQL", "Pytest", "Automation"],
+      "category": "Data Engineering",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "title": "The Fineprint Project",
+      "description": "Delivered measurable impact by automating legal text interpretation using Groq LLMs, and Gemini TTS. Built intelligent document analysis system that extracts and summarizes complex legal language.",
+      "impact": "Automated legal document processing, making complex terms accessible through AI-powered interpretation",
+      "icon": "Shield",
+      "technologies": ["Groq LLMs", "Gemini TTS", "NLP", "LangChain", "Document Processing", "Pinecode"],
+      "category": "AI/ML",
+      "url": "https://github.com/GentRoyal/the-fineprint-project"
+    },
+    {
+      "id": 4,
+      "title": "Financial Forecasting & MLOps Pipeline",
+      "description": "Developed and managed ETL and MLOps pipelines with Airflow and MLflow for financial forecasting and model lifecycle tracking. Applied transfer learning, resampling, and explainability techniques across diverse datasets.",
+      "impact": "Streamlined model deployment cycle and improved forecasting accuracy through systematic MLOps practices",
+      "icon": "TrendingUp",
+      "technologies": ["Airflow", "MLflow", "Scikit-learn", "SHAP", "Transfer Learning", "Model Versioning"],
+      "category": "MLOps",
+      "url": "https://github.com/GentRoyal/financial-etl-pipeline"
+    },
+    {
+      "id": 5,
+      "title": "Multi-Domain ML Systems",
+      "description": "Built and optimized machine learning systems spanning fraud detection, healthcare, finance, and NLP applications. Designed AI workflows integrating FastAPI, LangChain, and Pinecone for real-world automation and analysis tasks.",
+      "impact": "Delivered production-ready ML solutions across multiple industries with measurable business impact",
+      "icon": "Zap",
+      "technologies": ["FastAPI", "LangChain", "Pinecone", "Scikit-learn", "XGBoost", "Model Explainability"],
+      "category": "AI/ML",
+      "url": "https://example.com"
+    },
+    {
+      "id": 6,
+      "title": "Economic Recovery Dashboard",
+      "description": "Built a real-time dashboard that tracks economic recovery using FRED API data, FastAPI backend, and prompt-engineered responses for interactive frontend.",
+      "impact": "Enabled real-time monitoring of macroeconomic recovery trends with interactive analytics.",
+      "icon": "ChartLine",
+      "technologies": ["Python", "FastAPI", "FRED API", "Prompt Engineering", "LLM"],
+      "category": "Macroeconomics",
+      "url": "https://github.com/GentRoyal/economic-recovery"
+    },
+    {
+      "id": 7,
+      "title": "FraudDetect System",
+      "description": "Built a real-time fraud detection system using highly imbalanced data (0.3% fraud), achieving at least 83% precision, recall, and F1-score on both classes.",
+      "impact": "Reduced financial fraud risks with high-accuracy real-time detection.",
+      "icon": "Shield",
+      "technologies": ["Python", "Scikit-Learn", "Streamlit", "Feature Selection", "Data Resampling"],
+      "category": "Finance",
+      "url": "https://fraud-credit-card.streamlit.app/"
+    },
+    {
+      "id": 8,
+      "title": "Knowledge Gap Analysis",
+      "description": "Segmented students using clustering analysis and visualized grade predictions and knowledge gaps with Power BI for targeted support.",
+      "impact": "Improved educational interventions by identifying knowledge gaps for personalized support.",
+      "icon": "GraduationCap",
+      "technologies": ["Python", "Pandas", "Scikit-learn", "PowerBI"],
+      "category": "Education",
+      "url": "https://app.powerbi.com/view?r=eyJrIjoiNzQxODkxMjctMTJiZC00NTNlLTgxMWItYTI4ZWU3ODk2NDc5IiwidCI6IjU3NGExZTM2LTYxNDktNGY2Ni05ZTBmLWM3MGIyMDQzNTQyMCJ9"
+    },
+    {
+      "id": 9,
+      "title": "hERG Blocker Classification",
+      "description": "Developed a Dockerized ML pipeline for cardiotoxicity prediction with 89.4% ROC-AUC, using engineered molecular features and SMOTE for improved class detection.",
+      "impact": "Enhanced drug safety evaluation by accurately predicting cardiotoxic compounds.",
+      "icon": "Pills",
+      "technologies": ["Python", "Scikit-learn", "SMOTE", "Docker", "SMILES"],
+      "category": "Drug Discovery",
+      "url": "https://github.com/GentRoyal/outreachy-contributions"
+    },
+    {
+      "id": 10,
+      "title": "Bitcoin Volatility Prediction",
+      "description": "Predicted Bitcoin price volatility using GARCH, delivering actionable insights on daily (3.63%) and annual (69.31%) fluctuations to optimize trading strategies.",
+      "impact": "Provided traders with actionable insights to optimize cryptocurrency trading decisions.",
+      "icon": "ChartLine",
+      "technologies": ["Python", "GARCH", "Statsmodels", "API", "Time Series"],
+      "category": "Cryptocurrency",
+      "url": "https://github.com/GentRoyal/volatility"
+    },
+    {
+      "id": 11,
+      "title": "MedNet Diagnosis System",
+      "description": "Built medical diagnosis system with 85% accuracy for early disease detection and applied topic modelling to derive insights from patient data.",
+      "impact": "Improved early disease detection and patient data insights in healthcare.",
+      "icon": "Heartbeat",
+      "technologies": ["Python", "Machine Learning", "Scikit-Learn", "NLP", "Topic Modelling"],
+      "category": "Healthcare",
+      "url": "https://mednet.streamlit.app/"
+    },
+    {
+      "id": 12,
+      "title": "Financial Education Recommender",
+      "description": "Developed content-based recommender with cosine similarity and clustering to personalize financial education and boost engagement.",
+      "impact": "Increased user engagement by providing personalized financial learning content.",
+      "icon": "ThumbsUp",
+      "technologies": ["Python", "Scikit-learn", "Clustering", "Content-Based"],
+      "category": "Recommendation",
+      "url": "https://finance-program-recommender.streamlit.app/"
+    },
+    {
+      "id": 13,
+      "title": "UCL 2024/25 Prediction Model",
+      "description": "Engineered key features and built regression model with 84% accuracy. Successfully predicted 7 of top 8 teams and 14 of next 16 teams in final standings.",
+      "impact": "Provided accurate predictions for UCL standings and team performance analysis.",
+      "icon": "Futbol",
+      "technologies": ["Python", "Regression", "Feature Engineering"],
+      "category": "Sports Analytics",
+      "url": "https://uclr016-progress-prediction.streamlit.app/"
+    },
+    {
+      "id": 14,
+      "title": "Atlanta Crime Analytics",
+      "description": "Created an interactive crime dashboard using Power BI, providing key insights into crime patterns, COVID-19 effects, and forecasting trends.",
+      "impact": "Enabled data-driven insights for public safety and crime prevention strategies.",
+      "icon": "ChartPie",
+      "technologies": ["PowerBI", "Data Cleaning", "Excel", "Feature Selection"],
+      "category": "Public Safety",
+      "url": "https://app.powerbi.com/view?r=eyJrIjoiZDA0MDlhNmQtNmE3YS00YTgyLWI5NjktYWJkMmQwMzY5YzJmIiwidCI6IjU3NGExZTM2LTYxNDktNGY2Ni05ZTBmLWM3MGIyMDQzNTQyMCJ9"
+    },
+    {
+      "id": 15,
+      "title": "CareWomb",
+      "description": "Developed CareWomb, a maternal health platform integrating predictive analytics and personalized recommendations to support safer pregnancies.",
+      "impact": "Improved maternal health outcomes through predictive insights and personalized support.",
+      "icon": "Baby",
+      "technologies": ["Python", "Scikit-Learn", "Regression", "Streamlit"],
+      "category": "Maternal Health",
+      "url": "https://carewomb.streamlit.app/"
+    }
+  ]
+}
